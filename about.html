@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | MREM</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,74 +19,95 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Join Now</a>
         </div>
     </header>
 
-    <div class="page-header">
-        <h1>About Our Institution</h1>
-    </div>
+    <section class="hero" style="padding: 140px 2rem 80px;">
+        <div class="hero-content">
+            <h1>About Our Institution</h1>
+            <p>Nurturing minds and building futures since 2008. Discover the journey and legacy of MREM.</p>
+        </div>
+    </section>
 
     <section>
-        <div class="content-grid">
-            <div class="text-content">
-                <div class="section-title" style="text-align: left;">
-                    <h2>Academic Excellence Since 2008</h2>
-                </div>
-                <p style="margin-bottom: 20px;">Malla Reddy Engineering College & Management Sciences (MREM) was established in 2008 under the auspices of Vemula Raghava Reddy Lakshmamma Educational Society. Our campus is located in a verdant 10-acre serene environment on the Hyderabad – Nagpur National Highway (Medchal Road).</p>
-                <p style="margin-bottom: 20px;">The college provides an ideal setting amidst natural surroundings, lush green and free of pollution, fostering an atmosphere of focused learning and innovation. We are affiliated with JNTUH, Hyderabad and approved by AICTE.</p>
-                <p>Our focus on academic rigor combined with industry exposure prepares our students to meet the challenges of the global workforce.</p>
-            </div>
+        <div class="contact-grid" style="align-items: center;">
             <div class="image-wrapper">
-                <!-- Using a placeholder for actual campus image -->
-                <div style="width: 100%; height: 450px; background: #eee; border-radius: 20px; border: 2px solid var(--primary); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #666; text-align: center; padding: 20px;">
-                    <span style="font-size: 3rem; margin-bottom: 15px;">🏛️</span>
-                    <p style="font-weight: 700;">Actual Campus Image Placeholder</p>
-                    <p style="font-size: 0.85rem; margin-top: 10px;">User: Please replace this with the actual photo of the MREM main building.</p>
+                <div style="aspect-ratio: 16/9; background: #e2e8f0; border-radius: var(--radius-lg); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-muted); border: 2px dashed var(--border-color);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4"/><path d="M5 21V10.85"/><path d="M19 21V10.85"/><path d="M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+                    <p style="font-weight: 700;">Main Building Image Placeholder</p>
+                    <p style="font-size: 0.8rem;">Replace with official campus photo</p>
                 </div>
+            </div>
+            <div>
+                <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--navy); margin-bottom: 1.5rem;">Academic Excellence Since 2008</h2>
+                <p style="margin-bottom: 1.5rem;">Malla Reddy Engineering College & Management Sciences (MREM) was established in 2008 under the auspices of Vemula Raghava Reddy Lakshmamma Educational Society. Our campus is located in a verdant 10-acre serene environment on the Hyderabad – Nagpur National Highway (Medchal Road).</p>
+                <p>The college provides an ideal setting amidst natural surroundings, lush green and free of pollution, fostering an atmosphere of focused learning and innovation. We are affiliated with JNTUH, Hyderabad and approved by AICTE.</p>
             </div>
         </div>
     </section>
 
-    <section style="background-color: var(--gray-light);">
-        <div class="section-title">
-            <h2>Institutional Highlights</h2>
+    <section style="background: var(--bg-light);">
+        <div class="section-title" style="text-align: center;">
+            <h2>Infrastructure & Facilities</h2>
         </div>
-        <div class="card-grid">
+        <div class="grid">
             <div class="card">
-                <h3>Vibrant Campus</h3>
-                <p>10 acres of lush green environment conducive to learning and personal growth.</p>
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>
+                </div>
+                <h3>Central Library</h3>
+                <p>Central library is housed in the academic block over a plinth area of nearly 650 sq.m, meeting all academic and research needs.</p>
             </div>
             <div class="card">
-                <h3>Modern Infrastructure</h3>
-                <p>State-of-the-art laboratories, a Central Library of 650 sq.m, and WiFi enabled campus.</p>
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3>Modern Labs</h3>
+                <p>State-of-the-art laboratories equipped with the latest technology for hands-on practical training.</p>
             </div>
             <div class="card">
-                <h3>Career Success</h3>
-                <p>Strong placement record with students securing roles in top MNCs with competitive packages.</p>
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 13.1V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                </div>
+                <h3>Transport Facility</h3>
+                <p>Convenient transport facility for students and staff from all parts of the twin cities.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>MREM</h4>
-                <p>Affiliated to JNTUH, Hyderabad.</p>
-                <p>Approved by AICTE, New Delhi.</p>
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">MRE<span>M</span></div>
+                <p style="opacity: 0.6; margin-bottom: 2rem;">Dedicated to creating future leaders through academic excellence and innovation since 2008.</p>
             </div>
-            <div class="footer-section">
-                <h4>Location</h4>
-                <p>Kistapur Village, Mediciti Road,</p>
-                <p>Medchal, Hyderabad – 501401</p>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
             </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: info@mrem.ac.in</p>
-                <p>Phone: +91 93460 09494</p>
+            <div class="footer-links">
+                <h4>Academics</h4>
+                <ul>
+                    <li><a href="#">B.Tech</a></li>
+                    <li><a href="#">MBA</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Placements</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Get in Touch</h4>
+                <p style="opacity: 0.6;">Medchal, Hyderabad - 501401</p>
+                <p style="opacity: 0.6; margin-top: 10px;">info@mrem.ac.in</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Malla Reddy Engineering College and Management Sciences. All Rights Reserved.</p>
+            <p>&copy; 2025 Malla Reddy Engineering College & Management Sciences.</p>
         </div>
     </footer>
 </body>
