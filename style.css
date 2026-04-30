@@ -1,0 +1,493 @@
+:root {
+    --primary: #ff7200;
+    --primary-dark: #002147;
+    --bg: #002147;
+    --card-bg: #fff;
+    --accent: #ff7200;
+    --text: #fff;
+    --shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.73);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+    border-bottom: 2px solid var(--primary);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    /* background: linear-gradient(165deg, var(--accent), var(--accent),rgb(255, 255, 255)); */
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 0;
+    width: 80%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    padding: 0 24px;
+    animation: fadeIn 1s ease-in-out;
+    flex-wrap: nowrap;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border: 2px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(135deg, #00254f 0%, #00254f 100%); */
+    /* not white suggest me some other  dark colors  */
+    background: linear-gradient(135deg, #00254f 0%, #0d3472 100%);
+    background: hsl(0, 0%, 100%);
+    backdrop-filter: blur(10px);
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 0 16px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 28px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.btn {
+    background: #fff;
+    color: var(--primary-dark);
+    border: none;
+    border-radius: 22px;
+    border: 1px solid var(--primary);
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: var(--primary);
+    color: #fff;    
+    border: 1px solid #fff;
+}
+.hero-image img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 12px;
+}
+
+
+.card-section {
+    padding: 60px 0 40px 0;
+    text-align: center;
+    height: 100%;
+}
+
+.card-section h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin: 0px 0px 32px 0px;
+    font-weight: bold;
+}
+
+.card {
+    /* background: linear-gradient(120deg, #ff7200 0%, #ffb347 100%); */
+    /* background: linear-gradient(135deg, #ffffff 0%, #c3cfe2 100%); */
+    background-image: url('images/white-hexa-bg.jpg');
+    image-rendering: optimizeQuality;
+    background-size: cover;
+    color: var(--primary-dark);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    text-align: left;
+}
+
+#clg-name {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.card li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+/* #mission {
+    background-image: url('images/white-hexa--bg.jpg');
+} */
+
+footer {
+    background: var(--primary-dark);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Courses Section Styling */
+#courses.card-section {
+    /* background: linear-gradient(155deg, #00254f 0%, #0d3472 100%); */
+    background: linear-gradient(135deg, #ffffff 0%, #c3cfe2 100%);
+     background: linear-gradient(135deg, #00254f 0%, #0d3472 100%);
+
+    /* background: linear-gradient(120deg, #ff7200 0%, #ffb347 100%); */
+    min-height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 60px 0;
+    border-radius: 22px;
+}
+
+#courses h2 {
+    color: var(--accent);
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.courses-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+.courses-nav button {
+    background: #fff;
+    color: #ff7200;
+    border: 2px solid #ff7200;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 2px 8px rgb(255, 136, 0); */
+}
+
+.courses-nav button:hover {
+    background: #ff7200;
+    color: #fff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 320px;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    gap: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-container .card {
+    flex: 0 0 320px;
+    max-width: 280px;
+    min-width: 240px;
+    background: #f0fcff;
+    color: #002147;
+    border-radius: 18px;
+    border: 1px solid var(--primary);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 28px 20px 20px 20px;
+    text-align: center;
+    opacity: 1;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    display: none; /* Hide by default, show via JS */
+}
+
+.card-container .card.visible {
+    display: block;
+}
+
+.card-container .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(255,114,0,0.10);
+}
+
+.card-container .card h3 {
+    color: #ff7200;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-container .card p {
+    font-size: 1rem;
+    color: #002147;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.admissions-section {
+    background: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admissions-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 2px solid var(--primary);
+}
+
+.admissions-img {
+    flex: 1 1 320px;
+    /* min-width: 260px;
+    max-width: 400px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admissions-img img {
+    width: 100%;
+    /* height: 260px; */
+    object-fit: cover;
+    border-radius: 0 18px 18px 0;
+    box-shadow: 0 2px 12px rgba(0,33,71,0.10);
+}
+
+.admissions-content {
+    flex: 2 1 400px;
+    padding: 40px 32px;
+    color: #002147;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+.admissions-content h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.admissions-content p {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.admissions-btn {
+    align-self: flex-start;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 22px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255,114,0,0.10);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.admissions-btn:hover {
+    background: #002147;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+@media (max-width: 700px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 16px;
+        padding: 14px 8px;
+    }
+    nav ul {
+        gap: 18px;
+    }
+    .hero-content {
+        padding: 0 8px;
+    }
+    .card {
+        padding: 18px 8px;
+    }
+    #announcements {
+        padding: 18px 8px 18px 8px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .card-container {
+        gap: 16px;
+    }
+    .card-container .card {
+        flex: 0 0 260px;
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        gap: 8px;
+    }
+    .card-container .card {
+        flex: 0 0 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-container {
+        gap: 4px;
+    }
+    .card-container .card {
+        flex: 0 0 90vw;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #courses h2 {
+        font-size: 1.5rem;
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+    .card-container {
+        max-width: 98vw;
+        min-height: 200px;
+    }
+    .card-container .card {
+        min-width: 90vw;
+        max-width: 98vw;
+        padding: 18px 8px 18px 8px;
+    }
+    .courses-nav button {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+    .admissions-container {
+        flex-direction: column;
+        max-width: 98vw;
+    }
+    .admissions-img img {
+        border-radius: 18px 18px 0 0;
+        height: 180px;
+    }
+    .admissions-content {
+        padding: 24px 12px;
+    }
+}
+
